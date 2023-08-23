@@ -55,7 +55,6 @@ price: '40 Dinars'},
 name: 'SAC À MAIN',
 description: 'Sac à main en Cuir de vachette pour femme de haute qualité avec une couture fait main.',
 image: 'https://3d-creativity.com/wp-content/uploads/2023/01/Sac-a-main-cuir-scaled.jpg',
-price: '170 Dinars'},
-{catégorie: '',}
+price: '170 Dinars'}
 ]
 export default data;

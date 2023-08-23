@@ -1,5 +1,8 @@
 import './App.css';
+import data from './components/Data';
 import NavScrollExample from './components/Navbar';
+import Productscards from './components/Productscards';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 <link
   rel="stylesheet"
@@ -13,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <NavScrollExample />
+      <Productscards data={data}/>
     </div>
   );
 }
