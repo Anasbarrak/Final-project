@@ -1,8 +1,10 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import data from './components/Data';
+import products from './components/Data';
 import NavScrollExample from './components/Navbar';
 import Productscards from './components/Productscards';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Productslist from './components/Productslist';
 
 <link
   rel="stylesheet"
@@ -15,8 +17,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-      <NavScrollExample />
-      <Productscards data={data}/>
+      <Routes>
+        <Route path='The Store' element={<NavScrollExample />}/>
+        <Route path='Home' element={<Productscards products={products}/>}/>
+        <Route path='Store' element={<Productslist/>}/>
+      </Routes>
     </div>
   );
 }

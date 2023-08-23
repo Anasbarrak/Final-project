@@ -1,4 +1,4 @@
-const data = [
+const products = [
 {catégorie: 'Applique',
 name: 'Applique s',
 longueur : "25 cm",
@@ -57,4 +57,4 @@ description: 'Sac à main en Cuir de vachette pour femme de haute qualité avec 
 image: 'https://3d-creativity.com/wp-content/uploads/2023/01/Sac-a-main-cuir-scaled.jpg',
 price: '170 Dinars'}
 ]
-export default data;
+export default products;

@@ -1,12 +1,12 @@
 import React from 'react'
 import Productscards from './Productscards'
-import data from 'Data.js' 
+import products from './Data'
 
 function Productslist() {
-  console.log(data)
+  console.log(products)
   return (
     <div>
-      {data.map((e) => <Productscards data={data}/>)}
+      {products.map((e) => <Productscards products={products}/>)}
     </div>
   )
 }

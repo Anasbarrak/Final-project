@@ -1,22 +1,17 @@
 import React from 'react'
 import { Button, Card } from 'react-bootstrap'
-import data from './Data'
-function Productscards(data) {
+
+function Productscards({products}){
+  console.log(products)
   return (
-    <div>
-      
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src={products.image} style={{height:"320px"}}/>
       <Card.Body>
-        <Card.Title>{Element.data}</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Card.Title>{products.name}</Card.Title>
+        <Card.Text>{products.description}</Card.Text>
+        <Button variant="primary">Add To Cart</Button>
       </Card.Body>
     </Card>
-    </div>
   )
 }
 
